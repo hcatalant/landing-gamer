@@ -56,6 +56,13 @@ nav ul {
 
 .head-content-text {
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 2em;
 }
 .head-content-text h1{
     font-size: 2.9em;
@@ -65,6 +72,13 @@ nav ul {
     text-transform: capitalize;
 }
 
+.title {
+    font-size: 2.9em;
+    font-weight: bolder;
+    color: rgba(6, 26, 64, 0.8);
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+}
 .head-content-text p{
     font-size: 0.9em;
     color: rgba(6, 26, 64, 0.7);
@@ -102,4 +116,63 @@ nav ul {
 .btn:hover {
     box-shadow: rgba(0, 53, 89, 0.5) 0 1px 30px;
     transition-duration: .1s;
+}
+
+
+.briefly-catalog {
+    padding: 3em;
+}
+
+.list-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,max-content));
+    margin: 0;
+    gap: 30px;
+}
+
+.list-products .product {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.list-products .product img {
+    width: 100%;
+    height: auto;
+}
+
+.list-products .product h2 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+}
+.briefly-catalog .title {
+    text-align: center;
+}
+
+footer {
+    background-color: #061A40;
+   padding: 2em;
+}
+
+footer nav {
+    background-color: #061A40;
+    color: #FFFFFF;
+}
+
+footer .footer-content {
+    color: #FFFFFF;
+    border-top: solid 1px rgba(70, 66, 66, 0.83);
+}
+footer .footer-content-text{
+    text-align: center;
+}
+footer nav a, footer nav .logo {
+    color: #FFFFFF;
 }
